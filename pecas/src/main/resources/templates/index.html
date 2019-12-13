@@ -1,0 +1,28 @@
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+
+<title>Produtos</title>
+
+</head>
+<body>
+
+<h1>Lista de Produtos</h1>
+<h3><a href="/cadastrarProduto">Cadastrar Produtos</a></h3>
+<div th:each="Produto : ${Produto}">
+<div class="row">
+<p><span th:text="${Produto.codigo}"></span></p>
+<p><span th:text="${Produto.nome}"></span></p>
+<p><span th:text="${Produto.valor}"></span></p>
+<p><span th:text="${Produto.referencia}"></span></p>
+
+
+
+
+</div>
+</div>
+	
+	
+
+</body>
+</html>
